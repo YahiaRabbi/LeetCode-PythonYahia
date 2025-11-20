@@ -18,11 +18,9 @@ class MyQueue:
             while self.s1:
                 self.s2.append(self.s1.pop())
         return self.s2[-1]
-        
 
     def empty(self) -> bool:
-        return max(len(self.s1),len(self.s2)) == 0
-        
+        return max(len(self.s1), len(self.s2)) == 0
 
 
 # Your MyQueue object will be instantiated and called as such:
